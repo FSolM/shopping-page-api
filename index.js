@@ -10,6 +10,7 @@ app.get('/', (req, res) => {
   res.send('API is running!')
 });
 
+// External operations
 require('./api/cartOperations')(app);
 require('./api/shirtOperations')(app);
 require('./api/penOperations')(app);
